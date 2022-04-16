@@ -1,0 +1,247 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* font-family: 'Nunito', sans-serif;
+font-family: 'Poppins', sans-serif; */
+
+:root {
+  --gradient: linear-gradient(to bottom right, #fe5030, #dd2575);
+  --white: #ffffff;
+  --secondFont: "Nunito", sans-serif;
+  --firstFont: "Poppins", sans-serif;
+}
+/* body{
+    padding: 0px 140px;
+} */
+/* For container */
+/* Navbar */
+
+#container {
+  /* background-color: gray; */
+  background-image: var(--gradient);
+  /* background-image: linear-gradient(to bottom right, #FE5030,#DD2575); */
+  height: 100vh;
+  padding: 20px 140px;
+}
+
+#navbarBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#navbar {
+  position: absolute;
+  top: 25px;
+  right: 140px;
+}
+
+#navbar a {
+  text-decoration: none;
+  color: var(--white);
+  /* border: 1px solid white; */
+  padding: 5px 20px;
+  margin: 0px 5px;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 17px;
+  font-family: var(--secondFont);
+}
+
+#navbar a:hover {
+  background-color: var(--white);
+  color: #fe5030;
+}
+
+#logo {
+  font-size: 28px;
+  color: var(--white);
+  font-weight: 700;
+  font-family: var(--firstFont);
+}
+
+#btn5{
+    background-color: #ffffff5d;
+}
+
+/* Hero Section */
+
+#heroBox {
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  height: 85%;
+  margin: 25px 0px;
+}
+
+#heroContentBox {
+  /* border: 1px solid var(--white); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#heroContentBox h1 {
+  font-family: var(--firstFont);
+  color: var(--white);
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 120%;
+}
+#heroContentBox p,
+button {
+  font-family: var(--secondFont);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 24px;
+  margin: 20px 5px;
+  /* line-height: 120%; */
+}
+
+#btn1 {
+  padding: 10px 20px;
+  border: 2px solid var(--white);
+  border-radius: 40px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #dd2575;
+  background-color: var(--white);
+}
+
+#btn2 {
+  padding: 10px 20px;
+  border: 2px solid var(--white);
+  border-radius: 40px;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--white);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#btn1:hover {
+  color: var(--white);
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#btn2:hover {
+  color: #dd2575;
+  background-color: var(--white);
+}
+
+#btn {
+  margin: 40px 0px 0px 0px;
+}
+
+/* #heroImageBox {
+  border: 1px solid var(--white);
+} */
+
+#heroImageBox img {
+  width: 600px;
+}
+
+/* Middle Box */
+
+#middleBox {
+  /* border: 2px solid black; */
+  margin: 100px 0px;
+  padding: 0px 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 150vh;
+  justify-content: center;
+}
+
+#middleBox h1 {
+  font-family: var(--firstFont);
+  color: #dd2575;
+  font-weight: 900;
+  font-size: 50px;
+}
+#middleBox p {
+  width: 500px;
+  text-align: center;
+  font-family: var(--secondFont);
+  color: #849198;
+  font-weight: 700;
+  font-size: 24px;
+}
+#middleBox img {
+  width: 1200px;
+  margin: 100px 0px;
+}
+
+/* Lastbox */
+#lastBox {
+  /* border: 2px solid black; */
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  height: 85vh;
+  margin: 25px 0px;
+  background-image: linear-gradient(to bottom right, rgba(254, 79, 48, 0.164), rgba(221, 36, 116, 0.151));
+}
+
+#lastBoxContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+
+#lastBoxContent h1 {
+  font-family: var(--firstFont);
+  color: #dd2575;
+  /* font-weight: 900; */
+  font-size: 60px;
+  line-height: 120%;
+}
+
+#lastBoxContent p,
+button {
+  font-family: var(--secondFont);
+  color: #849198;
+  font-weight: 700;
+  font-size: 24px;
+  margin: 20px 5px;
+  /* line-height: 120%; */
+}
+
+#btn3 {
+  padding: 10px 20px;
+  border: 2px solid var(--white);
+  border-radius: 40px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #dd2575;
+  background-color: var(--white);
+}
+
+#btn4 {
+  padding: 10px 20px;
+  border: 2px solid #dd2575;
+  border-radius: 40px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #dd2575;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+#btn3:hover {
+  /* color: var(--white); */
+  background-color: rgba(255, 255, 255, 0.45);
+}
+
+#btn4:hover {
+  color: #dd2575;
+  background-color: var(--white);
+  border: 2px solid white;
+}
+
+#lastBox img {
+  width: 700px;
+  position: relative;
+  top: 50px;
+}
